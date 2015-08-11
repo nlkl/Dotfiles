@@ -35,7 +35,16 @@ set backspace=indent,eol,start
 set esckeys
 
 " Search
-set hlsearch
 set ignorecase
 set smartcase
+set hlsearch
 set incsearch
+
+" Explore
+let g:netrw_liststyle=3
+
+" GVIM
+if has('gui_running')
+    set guifont=Consolas:h10
+    " colorscheme solarized
+endif
