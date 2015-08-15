@@ -46,5 +46,9 @@ let g:netrw_liststyle=3
 " GVIM
 if has('gui_running')
     set guifont=Consolas:h10
+    set guioptions-=m
+    set guioptions-=T
+    " colorscheme lucius
     " colorscheme solarized
+    " set laststatus=2
 endif
