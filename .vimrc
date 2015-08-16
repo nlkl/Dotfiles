@@ -1,9 +1,18 @@
 set nocompatible
 
+" Plugin repos
+" git clone git://github.com/ctrlpvim/ctrlp.vim.git
+" git clone git://github.com/scrooloose/nerdtree.git
+" git clone git://github.com/bling/vim-airline.git
+" git clone git://github.com/flazz/vim-colorschemes.git
+" git clone git://github.com/tpope/vim-fugitive.git
+" git clone git://github.com/justinmk/vim-sneak.git
+
 " Plugins
 " execute pathogen#infect()
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
+" map <C-n> :NERDTreeToggle<CR>
 
 " No backup
 set nobackup
@@ -33,6 +42,7 @@ set mouse=a
 set encoding=utf8
 set backspace=indent,eol,start
 set esckeys
+set laststatus=2
 
 " Search
 set ignorecase
@@ -50,5 +60,4 @@ if has('gui_running')
     set guioptions-=T
     " colorscheme lucius
     " colorscheme solarized
-    " set laststatus=2
 endif
