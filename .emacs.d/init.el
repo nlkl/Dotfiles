@@ -1,6 +1,6 @@
 ;; PACKAGES
 
-;; Choose repo
+;; Add repos
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
       package-archives)
