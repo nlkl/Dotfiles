@@ -1,3 +1,6 @@
+;; INIT
+(require 'cl)
+
 ;; PACKAGES
 
 ;; Add repos
@@ -5,6 +8,8 @@
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
       package-archives)
 (push '("melpa" . "https://melpa.org/packages/")
+      package-archives)
+(push '("melpa-stable" . "http://stable.melpa.org/packages/")
       package-archives)
 (package-initialize)
 
@@ -16,9 +21,10 @@
 (require 'use-package)
 
 ;; Load and configure packages
-(setq evil-want-C-u-scroll t)
 (use-package evil
   :ensure t
+  :init
+  (setq evil-want-C-u-scroll t)
   :config
   (evil-mode 1)
   (define-key evil-normal-state-map [escape] 'keyboard-quit)
@@ -33,6 +39,16 @@
   :config
   (powerline-default-theme)
   (display-time-mode t))
+(use-package haskell-mode
+  :ensure t
+  :config
+  (add-hook 'haskell-mode-hook 'haskell-indentation-mode))
+(use-package tuareg
+  :ensure t)
+(use-package csharp-mode
+  :ensure t)
+(use-package fsharp-mode
+  :ensure t)
 (use-package atom-one-dark-theme
   :ensure t)
 
