@@ -1,4 +1,5 @@
 set nocompatible
+set runtimepath+=~/.vim
 
 " Plugin repos
 " git clone git://github.com/ctrlpvim/ctrlp.vim.git
@@ -11,10 +12,10 @@ set nocompatible
 " git clone git://github.com/tpope/vim-sensible.git
 
 " Plugins
-" execute pathogen#infect()
-" let g:ctrlp_map = '<c-p>'
-" let g:ctrlp_cmd = 'CtrlP'
-" map <C-n> :NERDTreeToggle<CR>
+execute pathogen#infect()
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+map <C-n> :NERDTreeToggle<CR>
 
 " No backup
 set nobackup
@@ -60,6 +61,6 @@ if has('gui_running')
     set guifont=Consolas:h10
     set guioptions-=m
     set guioptions-=T
-    " colorscheme lucius
+    colorscheme lucius
     " colorscheme solarized
 endif
