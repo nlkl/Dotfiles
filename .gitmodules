@@ -25,6 +25,3 @@
 [submodule ".vim/bundle/vim-colorscheme-switcher"]
 	path = .vim/bundle/vim-colorscheme-switcher
 	url = https://github.com/xolox/vim-colorscheme-switcher.git
-[submodule ".vim/bundle/vim-repeat"]
-	path = .vim/bundle/vim-repeat
-	url = https://github.com/tpope/vim-repeat.git
