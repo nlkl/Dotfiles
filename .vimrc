@@ -1,16 +1,6 @@
 set nocompatible
 set runtimepath+=~/.vim
 
-" Plugin repos
-" git clone git://github.com/ctrlpvim/ctrlp.vim.git
-" git clone git://github.com/scrooloose/nerdtree.git
-" git clone git://github.com/bling/vim-airline.git
-" git clone git://github.com/flazz/vim-colorschemes.git
-" git clone git://github.com/tpope/vim-fugitive.git
-" git clone git://github.com/justinmk/vim-sneak.git
-" git clone git://github.com/tpope/vim-surround.git
-" git clone git://github.com/tpope/vim-sensible.git
-
 " Plugins
 execute pathogen#infect()
 let g:ctrlp_map = '<c-p>'
