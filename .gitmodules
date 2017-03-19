@@ -43,3 +43,6 @@
 [submodule ".vim/bundle-extras/vim-colorschemes"]
 	path = .vim/bundle-extras/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
+[submodule ".vim/bundle/editorconfig-vim.git"]
+	path = .vim/bundle/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
