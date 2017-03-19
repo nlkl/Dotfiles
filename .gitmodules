@@ -39,7 +39,7 @@
 	url = https://github.com/xolox/vim-misc.git
 [submodule ".vim/bundle-extras/vim-colorscheme-switcher"]
 	path = .vim/bundle-extras/vim-colorscheme-switcher
-	url = https://github.com/xolox/vim-colorscheme-switcher.git
+	url = git://github.com/xolox/vim-colorscheme-switcher.git
 [submodule ".vim/bundle-extras/vim-colorschemes"]
 	path = .vim/bundle-extras/vim-colorschemes
 	url = git://github.com/flazz/vim-colorschemes.git
