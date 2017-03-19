@@ -18,9 +18,22 @@ set noswapfile
 " Colors
 syntax enable
 set background=dark
-colorscheme desert
-silent! colorscheme lucius
-silent! colorscheme flatcolor
+
+if has('termguicolors')
+    set termguicolors
+endif
+
+try
+    colorscheme flatcolor
+    let g:airline_theme='flatcolor'
+catch
+    try
+        colorscheme lucius
+        let g:airline_theme='lucius'
+    catch
+        colorscheme desert
+    endtry
+endtry
 
 " UI
 set number
