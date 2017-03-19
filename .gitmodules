@@ -7,9 +7,6 @@
 [submodule ".vim/bundle/vim-airline"]
 	path = .vim/bundle/vim-airline
 	url = git://github.com/bling/vim-airline.git
-[submodule ".vim/bundle/vim-colorschemes"]
-	path = .vim/bundle/vim-colorschemes
-	url = git://github.com/flazz/vim-colorschemes.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -19,12 +16,24 @@
 [submodule ".vim/bundle/vim-sensible"]
 	path = .vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
-[submodule ".vim/bundle/vim-misc"]
-	path = .vim/bundle/vim-misc
-	url = https://github.com/xolox/vim-misc.git
-[submodule ".vim/bundle/vim-colorscheme-switcher"]
-	path = .vim/bundle/vim-colorscheme-switcher
-	url = https://github.com/xolox/vim-colorscheme-switcher.git
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/bundle/gruvbox.git"]
+	path = .vim/bundle/gruvbox.git
+	url = https://github.com/morhetz/gruvbox.git
+[submodule ".vim/bundle/FlatColor.git"]
+	path = .vim/bundle/FlatColor.git
+	url = https://github.com/MaxSt/FlatColor.git
+[submodule ".vim/bundle/vim-lucius.git"]
+	path = .vim/bundle/vim-lucius.git
+	url = https://github.com/jonathanfilip/vim-lucius.git
+[submodule ".vim/bundle-extras/vim-misc"]
+	path = .vim/bundle-extras/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+[submodule ".vim/bundle-extras/vim-colorscheme-switcher"]
+	path = .vim/bundle-extras/vim-colorscheme-switcher
+	url = https://github.com/xolox/vim-colorscheme-switcher.git
+[submodule ".vim/bundle-extras/vim-colorschemes"]
+	path = .vim/bundle-extras/vim-colorschemes
+	url = git://github.com/flazz/vim-colorschemes.git
