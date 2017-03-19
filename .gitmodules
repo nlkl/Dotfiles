@@ -19,15 +19,21 @@
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/gruvbox.git"]
-	path = .vim/bundle/gruvbox.git
+[submodule ".vim/bundle/gruvbox"]
+	path = .vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
-[submodule ".vim/bundle/FlatColor.git"]
-	path = .vim/bundle/FlatColor.git
+[submodule ".vim/bundle/FlatColor"]
+	path = .vim/bundle/FlatColor
 	url = https://github.com/MaxSt/FlatColor.git
-[submodule ".vim/bundle/vim-lucius.git"]
-	path = .vim/bundle/vim-lucius.git
+[submodule ".vim/bundle/vim-lucius"]
+	path = .vim/bundle/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
+[submodule ".vim/bundle/dracula.vim"]
+	path = .vim/bundle/dracula.vim
+	url = https://github.com/dracula/vim.git
+[submodule ".vim/bundle/onedark.vim"]
+	path = .vim/bundle/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
 [submodule ".vim/bundle-extras/vim-misc"]
 	path = .vim/bundle-extras/vim-misc
 	url = https://github.com/xolox/vim-misc.git
