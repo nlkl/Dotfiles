@@ -2,55 +2,72 @@ set nocompatible
 set runtimepath+=~/.vim
 
 " Plugins
-execute pathogen#infect()
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-map <C-n> :NERDTreeToggle<CR>
+try
+    execute pathogen#infect()
+    let g:ctrlp_map = '<c-p>'
+    let g:ctrlp_cmd = 'CtrlP'
+    map <C-n> :NERDTreeToggle<CR>
+catch
+endtry
 
-" No backup
+" Disable backup
 set nobackup
 set nowb
 set noswapfile
 
+" Colors
+syntax enable
+set background=dark
+colorscheme desert
+silent! colorscheme lucius
+silent! colorscheme flatcolor
+
+" UI
+set number
+set showmode
+set showcmd
+set showmatch
+set wildmenu
+set lazyredraw
+set laststatus=2
+set esckeys
+set timeoutlen=1000 ttimeoutlen=10
+
 " Tabs
-set expandtab
-set smarttab
-set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 set autoindent
 
 " Filetype
 filetype plugin indent on
-filetype on
-
-" Syntax highlighting
-syntax enable
-colorscheme desert
-set background=dark
-
-" Various
-set number
-set showmode
-set mouse=a
-set encoding=utf8
-set backspace=indent,eol,start
-set esckeys
-set laststatus=2
 
 " Search
+set incsearch
+set hlsearch
 set ignorecase
 set smartcase
-set hlsearch
-set incsearch
 
-" Explore
-let g:netrw_liststyle=3
+" Various
+set encoding=utf8
+set mouse=a
+set backspace=indent,eol,start
+
+" Bindings
+let mapleader="\<space>"
 
 " GVIM
 if has('gui_running')
-    set guifont=Consolas:h10
+    if has("unix")
+        silent! set guifont=Inconsolata\ 12
+        silent! set guifont=Monospace\ Regular\ 12
+        silent! set guifont=Ubuntu\ Mono\ Regular\ 12
+    else
+        silent! set guifont=Consolas:h10
+    endif
+
     set guioptions-=m
     set guioptions-=T
-    colorscheme lucius
-    " colorscheme solarized
 endif
+
